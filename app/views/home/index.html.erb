@@ -1,0 +1,31 @@
+<div
+  id="welcome_message"
+  class="p-12 text-center"
+>
+  <h1
+    class="text-white jersey-10-regular hovering mt-52 md:mt-12"
+    style="font-size: 47px;"
+  >
+    Welcome
+  </h1>
+
+  <div
+    class="mx-auto"
+    style="width: 100%; max-width: 200px;"
+  >
+    <%= link_to intro_path, 
+            data: { 
+              turbo_stream: true,
+              controller: 'sound',
+              action: 'click->sound#playClickSound',
+              'sound-click-sound-value': '/rpg_song.mp3'
+            }, 
+            class: 'enlarge-link' do %>
+      <%= image_tag 'main_character.png', style: 'width: 100%;' %>
+
+      <div class="text-dark-pink m-2">
+        <strong>Start</strong>
+      </div>
+    <% end %>
+  </div>
+</div>

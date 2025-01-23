@@ -1,0 +1,41 @@
+<div class="m-24 p-12" style="margin-top: 145px; border: 7px solid #b1aa88; border-radius: 28px; background: #c4c4c4;">
+  <div class="flex flex-col lg:flex-row gap-8">
+    <div>
+      <h1
+        class="text-white text-center jersey-10-regular hovering"
+        style="font-size: 47px;"
+      >
+        About Site
+      </h1>
+
+      <div style="width: 100%; max-width: 200px; margin: 0 auto;">
+        <%= image_tag 'wizard.png' %>
+      </div>
+    </div>
+
+    <div>
+      <div class="goals-beliefs" style="padding: 20px 45px;">
+        <p><strong>Source:</strong> <%= link_to 'Github Repo', 'https://github.com/HuntBurdick/personal_website', class: 'underline mb-4 inline-block' %></p>
+        <p>The site was meticulously crafted with a modern and efficient technology stack that ensures both developer productivity and an excellent user experience. Here's a breakdown of the key components:</p>
+
+        <ul class="list-disc list-inside mt-4">
+          <li><strong>Ruby on Rails:</strong> The backbone of the application, Ruby on Rails powers the backend, handling everything from database interactions to routing. Its convention-over-configuration approach speeds up development while maintaining clean and maintainable code.</li>
+
+          <li><strong>Stimulus JS:</strong> This lightweight JavaScript framework enhances the site's interactivity by enabling dynamic behavior without adding unnecessary complexity. It integrates seamlessly with Rails, making it easy to build responsive, component-driven features.</li>
+
+          <li><strong>Turbo:</strong> A game-changer for modern web development, Turbo allows for partial page updates and accelerates navigation without full-page reloads. This creates a smoother and faster user experience akin to single-page applications, while retaining the simplicity of a traditional Rails setup.</li>
+        </ul>
+
+        <p class="mt-4">To ensure scalability and seamless deployment, the site was containerized and hosted on <strong>Digital Ocean</strong> using:</p>
+
+        <ul class="list-disc list-inside mt-4">
+          <li><strong>Kamal:</strong> This deployment tool makes managing containers and deploying to cloud services like Digital Ocean simple and efficient. It streamlines workflows, ensuring the application is consistently and reliably deployed.</li>
+        </ul>
+
+        <p class="mt-4">On the front end, <strong>Tailwind CSS</strong> was used to style the application, offering utility-first classes that promote a clean, maintainable, and responsive design. By using Tailwind CSS, we achieved a cohesive visual identity without writing extensive custom CSS.</p>
+
+        <p class="mt-4">Together, this stack combines the best of modern web technologies, creating a powerful, fast, and user-friendly platform tailored to meet the needs of its audience.</p>
+      </div>
+    </div>
+  </div>
+</div>

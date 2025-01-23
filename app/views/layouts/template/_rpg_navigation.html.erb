@@ -1,0 +1,75 @@
+<div id="rpg_navigation">
+  <div class="flex flex-wrap justify-center md:grid md:grid-flow-col auto-cols-max">
+    <a
+      href="/"
+      style="width: 150px; margin: 85px 14px 14px 14px;"
+      class="text-center enlarge-link"
+      data-controller="sound" 
+      data-sound-hover-sound-value="/hover.wav" 
+      data-sound-click-sound-value="/hover.wav" 
+      data-action="mouseover->sound#playHoverSound click->sound#playClickSound"
+    >
+      <%= image_tag 'house1.png', style: 'width: 100%;' %>
+      <span class="text-dark-pink">
+        <strong>Home</strong>
+      </span>
+    </a>
+
+    <% unless current_page?(controller: 'armory') %>
+      <a
+        href="<%= armory_path %>"
+        style="width: 200px; margin: 14px;"
+        class="text-center enlarge-link"
+        data-controller="sound" 
+        data-sound-hover-sound-value="/hover.wav" 
+        data-sound-click-sound-value="/hover.wav" 
+        data-action="mouseover->sound#playHoverSound click->sound#playClickSound"
+      >
+        <%= image_tag 'armory.png', style: 'width: 100%;' %>
+        <span class="text-dark-pink">
+          <strong>Armory</strong>
+          <br />
+          <i style="font-size: 12px;">(Skills)</i>
+        </span>
+      </a>
+    <% end %>
+
+    <% unless current_page?(controller: 'forge') %>
+      <a
+        href="<%= forge_path %>"
+        style="width: 165px; margin: 14px;"
+        class="text-center enlarge-link"
+        data-controller="sound" 
+        data-sound-hover-sound-value="/hover.wav" 
+        data-sound-click-sound-value="/hover.wav" 
+        data-action="mouseover->sound#playHoverSound click->sound#playClickSound"
+      >
+        <%= image_tag 'library.png', style: 'width: 100%;' %>
+        <span class="text-dark-pink">
+          <strong>Forge</strong>
+          <br />
+          <i style="font-size: 12px;">(Resume)</i>
+        </span>
+      </a>
+    <% end %>
+
+    <% unless current_page?(controller: 'government') %>
+      <a
+        href="<%= government_path %>"
+        style="width: 165px; margin: 14px;"
+        class="text-center enlarge-link"
+        data-controller="sound" 
+        data-sound-hover-sound-value="/hover.wav" 
+        data-sound-click-sound-value="/hover.wav" 
+        data-action="mouseover->sound#playHoverSound click->sound#playClickSound"
+      >
+        <%= image_tag 'government.png', style: 'width: 100%;' %>
+        <span class="text-dark-pink">
+          <strong>Government</strong>
+          <br />
+          <i style="font-size: 12px;">(Beliefs & Goals)</i>
+        </span>
+      </a>
+    <% end %>
+  </div>
+</div>

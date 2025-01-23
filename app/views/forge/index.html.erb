@@ -1,0 +1,143 @@
+<div class="m-6 md:m-12 lg:m-24 p-6 md:p-8 lg:p-12 mt-36 border-7 border-[#b1aa88] rounded-[28px] bg-[#c4c4c4]" style="border: 7px solid #b1aa88; margin-top: 145px;">
+  <div class="flex flex-col lg:flex-row gap-8">
+    <!-- Left Section -->
+    <div class="text-center lg:text-left">
+      <h1 class="jersey-10-regular hovering text-white text-[28px] md:text-[36px] lg:text-[47px] font-bold">
+        Forge
+      </h1>
+
+      <div class="w-full max-w-[200px] mx-auto lg:mx-0">
+        <%= image_tag 'library.png' %>
+      </div>
+
+      <p class="text-sm md:text-base mt-6">
+        El Paso, TX<br>
+        (915) 234 - 5171<br>
+        hunt@websitescenes.com<br>
+      </p>
+
+      <p class="text-sm md:text-base mt-4">
+        <a href="https://linkedin.com/in/byrl-hunt-burdick-iv" target="_blank">linkedin.com/in/byrl-hunt-burdick-iv</a><br>
+        <a href="https://websitescenes.com" target="_blank">websitescenes.com</a>
+      </p>
+
+      <%= link_to "/hunt-burdick-resume.pdf", download: "hunt-burdick-resume-#{Time.now}.pdf", style: 'border: 1px solid #444; border-radius: 10px; padding: 12px; display: flex; margin-top: 24px; text-align: center;' do %>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
+          <path d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+          <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+        </svg>
+        <span style="font-size: 12px;">Download</span>
+      <% end %>
+    </div>
+
+    <!-- Right Section -->
+    <div class="p-4 md:p-8 lg:p-12">
+      <div class="resume-section mb-8">
+        <div class="flex">
+          <div class="px-6">
+            <div style="max-width: 400px;">
+              <%= image_tag 'me.jpg', class: 'rounded-full' %>
+            </div>
+          </div>
+          <div>
+            <h2 class="text-[20px] md:text-[28px] lg:text-[32px] text-[#3e3e3e] font-semibold">Summary</h2>
+            <p class="text-sm md:text-base">
+              I'm an engineering leader with a track record of planning, building, and scaling successful software products and teams.
+              I have hands-on experience with the full software development lifecycle across multiple stacks.
+              I thrive in innovative environments and value strong team culture and clear responsibilities.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience -->
+      <div class="resume-section mb-8">
+        <h2 class="text-[20px] md:text-[28px] lg:text-[32px] text-[#3e3e3e] font-semibold">
+          Experience
+        </h2>
+
+        <%= render 'forge/resume/item',
+            heading: 'Squadpilot',
+            sub_heading: 'Founder / CTO (July 2023 - Present)',
+            list: [
+              'Experimented with numerous AI approaches and APIs to understand their uses and strengths.',
+              'Used Ruby on Rails to build a fully realtime meeting facilitation tool with customizable agendas and AI transcription tooling.',
+              'Built and managed a small team of full stack developers.',
+              'Managed project logistics ensuring timely delivery with scalability considerations.',
+              'Looking for new opportunities due to the funding for the company evaporating unexpectedly.',
+              'Represented the company at conferences, events and team building efforts.'
+            ] %>
+
+        <%= render 'forge/resume/item',
+            heading: 'Airship',
+            sub_heading: 'Senior Software Engineer Manager (January 2021 - August 2023)',
+            list: [
+              'Responsible for many company wide responsibilities that had a direct impact on the company getting acquired by Unosquare, a global services company.',
+              'Responsible for team structure and led efforts to evolve and optimize engineering management structure.',
+              'Created the concept of houses which had many squads.',
+              'Led efforts to consolidate meetings and make them more meaningful and impactful.',
+              'Responsible for hiring across the organization where I implemented testing, onboarding flows and outreach efforts.',
+              'Acted as floater that would drop into various projects and help with blockers, whether they be on the client or technology side.',
+              'Managed multiple managers that had their own reports.',
+              'Very active on the sales side and was brought in regularly as the technical representative for sales and discoveries.',
+              'Sized and estimated projects to assess for feasibility, approach and timeline.'
+            ] %>
+
+        <%= render 'forge/resume/item',
+            heading: 'e-Dealer Direct',
+            sub_heading: 'Co-Founder / CTO (March 2018 - January 2021)',
+            list: [
+              'Directed the creation of a scalable real-time auction platform achieving $1.5M monthly transactions pre-COVID.',
+              'Worked directly with large credit unions like GECU and dealers like Give Me the Vin to actuate feedback on our product, process and platform.',
+              'Optimized the platform to address scaling issues in the front end React codebase as well as the Ruby on Rails backend and related services like Elasticsearch.',
+              'Represented the company at conferences, events and speaker engagements.'
+            ] %>
+
+        <%= render 'forge/resume/item',
+            heading: 'Singulution',
+            sub_heading: 'Founder / CEO (Jun 2017 - Mar 2018)',
+            list: [
+              'Shopify but for distributors or SMBs with multiple locations and store fronts.',
+              'Created a full stack Ruby on Rails solution based on actioncable and realtime notifications.',
+              'Startup was acquired/absorbed by E-DealerDirect for equity and CTO position.'
+            ] %>
+
+        <%= render 'forge/resume/item',
+            heading: 'Arista Networks',
+            sub_heading: 'Software Engineer (August 2015 - June 2017)',
+            list: [
+              'Member of the customer facing EOS+ team.',
+              'Created POCs and solutions for large fortune 500 companies.',
+              'Developed a multicast monitor with React to visualize live multicast flows through a datacenter. The project was used to bring in business and was displayed at the National Association of Broadcaster conference in Las Vegas.',
+              'Developed applications for the Cloud Vision Portal.'
+            ] %>
+      </div>
+
+      <!-- Education -->
+      <div class="resume-section mb-8">
+        <h2 class="text-[20px] md:text-[28px] lg:text-[32px] text-[#3e3e3e] font-semibold">Education</h2>
+        <p class="text-sm md:text-base">The University of Texas at El Paso (2004 - 2008)</p>
+        <p class="text-sm md:text-base">Political Science / History</p>
+      </div>
+
+      <div class="resume-section mb-8">
+        <h2 class="text-[20px] md:text-[28px] lg:text-[32px] text-[#3e3e3e] font-semibold">
+          Notable wins
+        </h2>
+        <ul>
+          <li>
+            <strong>Multi-time speaker and hackathon judge · 2018 - present</strong>
+            Participating in events sponsored by organizations like Google Developers Group, STTE, Pioneers21 and others.
+          <li>
+            <strong>RESET Hackathon · Nov 2017</strong><br />
+            Security Category 1st Place Winner for an Ethereum based voting system we built with Ruby on Rails, Ethereum and Flutter.
+          </li>
+          <li>
+            <strong>Campuslink Hackathon · Sep 2016</strong>
+            Healthcare Category 1st Place Winner for a therapist to patient/parent communication tool called Therapy Buddy.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

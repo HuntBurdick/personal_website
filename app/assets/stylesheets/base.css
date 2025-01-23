@@ -1,0 +1,87 @@
+html, body {
+  min-height: 100vh;
+}
+
+body {
+  background: linear-gradient(to bottom, #003366, #336699, #6699CC, #99CCFF);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+ul li {
+  list-style: circle;
+  margin-left: 18px;
+}
+
+.jersey-10-regular {
+  font-family: "Jersey 10", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#main-nav {
+  position: absolute;
+  z-index: 999999;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.home-link {
+  width: 100%;
+  max-width: 45px;
+  margin: 0px 24px;
+  padding-top: 20px;
+  @media (min-width: 768px) {
+    max-width: 85px;
+  }
+}
+
+.home-link img {
+  width: 100%;
+}
+
+.home-link-text {
+  position: relative;
+  font-size: 12px;
+  top: -3px;
+  right: -7px;
+  @media (min-width: 768px) {
+    top: -12px;
+    right: -36px;
+  }
+}
+
+#rpg_navigation {
+  margin: 45px 24px;
+}
+
+form input {
+  padding: 6px 9px;
+}
+
+form textarea {
+  min-height: 240px;
+  padding: 6px 9px;
+}
+
+.form-errors-wrapper {
+  padding: 14px;
+  color: #fff;
+  background: #ff0000;
+  border-radius: 12px;
+}
+
+.text-pink {
+  color: #ffa2a2;
+}
+
+.text-dark-pink {
+  color: #6c3535;
+}

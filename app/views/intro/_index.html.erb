@@ -1,0 +1,82 @@
+<div id="intro_pane" class="fade-in">
+  <div id="stars"></div>
+  <div id="stars2"></div>
+  <div id="stars3"></div>
+  <div id="title" data-controller="cycle" class="text-center">
+    <span
+      data-cycle-target="span"
+      data-seconds="5"
+      class="block text-lg sm:text-xl md:text-2xl lg:text-3xl leading-relaxed max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto"
+    >
+      In the beginning...
+    </span>
+    <span
+      data-cycle-target="span"
+      data-seconds="3"
+      class="block text-lg sm:text-xl md:text-2xl lg:text-3xl leading-relaxed max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto"
+    >
+      Around 2008ish...
+    </span>
+    <span
+      data-cycle-target="span"
+      data-seconds="3"
+      class="block text-lg sm:text-xl md:text-2xl lg:text-3xl leading-relaxed max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto"
+    >
+      I began my technology career as a self-taught web developer.
+    </span>
+    <span
+      data-cycle-target="span"
+      data-seconds="3"
+      class="block text-lg sm:text-xl md:text-2xl lg:text-3xl leading-relaxed max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto"
+    >
+      By 2015 I was working for a Silicon Valley startup as a software engineer.
+    </span>
+    <span
+      data-cycle-target="span"
+      data-seconds="3"
+      class="block text-lg sm:text-xl md:text-2xl lg:text-3xl leading-relaxed max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto"
+    >
+      In 2018 my first startup was acquired.
+    </span>
+    <span
+      data-cycle-target="span"
+      data-seconds="3"
+      class="block text-lg sm:text-xl md:text-2xl lg:text-3xl leading-relaxed max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto"
+    >
+      In 2020 I was CTO at a startup doing 1.5M in monthly transactions.
+    </span>
+    <span
+      data-cycle-target="span"
+      data-seconds="3"
+      class="block text-lg sm:text-xl md:text-2xl lg:text-3xl leading-relaxed max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto"
+    >
+      In 2023 I helped another company scale and get acquired.
+    </span>
+    <span
+      data-cycle-target="span"
+      class="block text-lg sm:text-xl md:text-2xl lg:text-3xl leading-relaxed max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto"
+    >
+      Now I'm looking for new opportunities!
+    </span>
+    <div data-cycle-target="link" style="opacity: 0; transition: opacity 1s ease;">
+      <div
+        style="position: relative; top: 125px; font-size: 22px; z-index: 9999;"
+      >
+        <%= link_to 'Learn more about me -->',
+                    warp_path,
+                    style: 'color: blue;',
+                    class: 'hovering',
+                    data: {
+                      turbo_stream: true,
+                      controller: 'sound',
+                      action: 'click->sound#playClickSound',
+                      'sound-click-sound-value': '/warp.wav'
+                    } %>
+      </div>
+    </div>
+  </div>
+
+  <div id="star_gazer">
+    <%= image_tag 'main_character_1_bside.png' %>
+  </div>
+</div>

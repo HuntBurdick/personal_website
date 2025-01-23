@@ -1,0 +1,18 @@
+<%# locals: heading=string, sub_heading=string, list=array %>
+
+<div class="mt-5">
+  <h3 class="text-[18px] md:text-[20px] lg:text-[24px] font-semibold">
+    <%= heading %>
+  </h3>
+  <p class="text-sm md:text-base italic text-dark-pink">
+    <%= sub_heading %>
+  </p>
+
+  <% if local_assigns[:list] %>
+    <ul>
+      <% list.to_a.each do |list_item| %>
+        <li><%= list_item %></li>
+      <% end %>
+    </ul>
+  <% end %>
+</div>

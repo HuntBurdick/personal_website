@@ -1,0 +1,46 @@
+/* Define the hover animation */
+@keyframes hoverEffect {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation to elements */
+.hovering {
+  display: inline-block; /* Ensures inline elements work with transform */
+  animation: hoverEffect 3s ease-in-out infinite; /* Adjust duration as needed */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Apply the fade-in effect to an element */
+.fade-in {
+  animation: fadeIn 2s ease-in-out;
+}
+
+.enlarge-link {
+  display: inline-block; /* Makes the link behave like a block for better transform effects */
+  font-size: 16px; /* Base font size */
+  color: #007BFF; /* Link color */
+  text-decoration: none; /* Remove underline */
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+/* Enlarge the link and content on hover */
+.enlarge-link:hover {
+  transform: scale(1.2); /* Scales the link and its content */
+  color: #0056b3; /* Optional: Change color on hover */
+}
